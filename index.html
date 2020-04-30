@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>chat</title>
+</head>
+<script type="text/javascript">
+    function send(){
+    var lwla = document.getElementById("input").value;
+    var p = document.createElement("p");
+    var txt = document.createTextNode(lwla);
+
+    p.appendChild(txt);
+    
+
+    document.getElementById("result1").appendChild(p);
+
+
+}
+function send2(){
+    var tanya = document.getElementById("input").value;
+    var p = document.createElement("p");
+    var txt = document.createTextNode(tanya);
+
+    p.appendChild(txt);
+    
+
+    document.getElementById("result2").appendChild(p);
+
+
+}
+</script>
+<style type="text/css">
+body {
+	background-color: #f1f1f1;
+	display: flex;
+	font-family: 'Lato', sans-serif;
+	font-size: 0.875rem;
+	font-weight: 400;
+	color: #2c3e50;
+	height: 100vh;
+	overflow-y: hidden;
+}
+
+    #result1{
+       margin-left: 22%;
+		font-family: "Comic Sans MS", cursive, sans-serif;
+        line-height : 55px;
+        font-size: 25px;
+
+
+		color: gray ;
+		position: absolute;
+    }
+    #result2{
+       	line-height : 55px;
+		color: black;
+		float: right;
+		 font-size: 25px;
+		padding-left: 1%;
+		position: absolute;
+		font-family: "Comic Sans MS", cursive, sans-serif;
+
+    }
+ #A{
+  background-color: #30336b;
+  color: white;
+  padding: 16px 60px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  width: 220px;
+  height: 60px;
+  font-size: 20px;
+  outline: none;
+}
+
+#A:hover {
+  background-color: #1D1E1E;
+}
+input[type=text] {
+  width: 400px;
+  padding: 12px;
+
+  
+  border: 1px solid #ccc;
+border-left: none;
+  border-right: none;
+  border-top: none;
+  
+  margin-top: 6px;
+  margin-bottom: 16px;
+  outline: none;
+ 
+}
+
+</style>
+<body style="background-color: #30336b">
+	
+		<div class="all" style="padding-left: 10%; width: 600px;height: 750px;background-color:white;margin-top: 5%;margin-left: 30%;padding-top: 5%; border-radius: 10px;">
+		<img src="ios7-contact_icon-icons.com_50286.png" width=60px; height=60px; style="float: left;">
+        <input type="text" id="input">
+        <button id="A" onclick="send()">Send1</button>
+        <button id="A" onclick="send2()">Send2</button>
+        <div id="result1"></div>
+        <div id="result2"></div>
+    </div>
+	
+    
+
+</body>
+</html>
